@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    align-items: center;
+}
+
+/* style navbar baru */
+/* style menu tengah */
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    color: #004225;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li ul.dropdown {
+    width: 200%;
+    background-color: #004225ba;
+    color: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 18px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul li a:hover {
+    background-color: #004225ba;
+    color: white;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* style navbar keseluruhan */
+.navbar {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+/* style logo */
+.kiri a img {
+    width: 110px;
+}
+
+/* style profil */
+.kanan a svg {
+    width: 45px;
+}
+
+.kiri {
+    width: 15%;
+    text-align: center;
+}
+
+.tengah {
+    width: 70%;
+    flex: 1;
+    text-align: center;
+}
+
+.kanan {
+    width: 15%;
+    text-align: center;
+}
+/* style navbar baru */
+
+
+/* selamat datang dan masuk */
+.selamatdatang{
+    padding: 5px;
+    text-align: center;
+}
+
+.selamatdatang img {
+    padding: 2.5px 10px 2.5px 10px;
+    width: 90%;
+    border-radius: 80px;
+    margin-top: 95px;
+}
+
+#bacaanwelkam {
+    padding: 20px;
+    text-align: left;
+    margin-top: -430px;
+    margin-left: 95px;
+    color: white;
+}
+
+#bacaanwelkam h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#bacaanwelkam img {
+    height: 50px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#bacaanwelkam p {
+    font-size: 20px;
+    color: white;
+}
+
+/* dalil tentang zakat */
+.dalilzakat {
+    display: flex;
+    padding: 5px;
+}
+
+.dalilzakat img {
+    width: 450px;
+    margin-top: 300px;
+    margin-left: 120px;
+}
+
+#bacaandalil {
+    flex: 1;
+    padding: 45px 80px 45px 45px;
+    margin-top: 330px;
+}
+
+#bacaandalil h2 {
+    text-align: right;
+}
+
+#bacaandalil p {
+    font-size: 25px;
+}
+
+/* materi materi */
+
+.artikelmateri {
+    margin: 200px 50px 50px 50px;
+}
+
+#ttgzakat {
+    display: flex;
+}
+
+#ttgzakat p {
+    padding: 30px;
+    color: #004225;
+}
+
+#macamzakat {
+    display: flex;
+    text-align: center;
+}
+
+#macamzakat img {
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#macamzakat a {
+    text-decoration: none;
+}
+
+#macamzakat p {
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.artikelmateri button {
+    font-size: 15px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    background-color: #004225;
+    border-radius: 25px;
+    border: none;
+}
+
+.artikelmateri button:hover {
+    background-color: #004f2d;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* tentang kalkulator */
+
+.fiturmenarik {
+    margin: 100px;
+    background-color: #6E8F73;
+    border-radius: 40px;
+    padding: 60px;
+    color: white;
+}
+
+#ttgkalkulator {
+    display: flex;
+    text-align: center;
+}
+
+#gambarkuning {
+    width: 50%;
+    padding-top: 60px;
+}
+
+#gambarkuning img {
+    width: 300px;
+}
+
+#gambarkuning button {
+    font-size: 15px;
+    padding: 15px 20px 15px 20px;
+    color: black;
+    background-color: #ffd147;
+    border-radius: 25px;
+    border: none;
+}
+
+#gambarkuning button:hover {
+    background-color: #FFDC71;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#jeniskalkulator {
+    width: 50%;
+    padding: 60px;
+    color: #004225;
+    text-align: left;
+}
+
+#a {
+    display: flex;
+    background-color: #004225;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#a p {
+    width: 85%;
+    text-align: left;
+    font-size: 25px;
+}
+
+#a svg {
+    width: 15%;
+    fill: white;
+}
+
+#b {
+    display: flex;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#b p {
+    width: 85%;
+    text-align: left;
+    font-size: 22px;
+}
+
+#b svg {
+    width: 15%;
+}
+
+#c {
+    display: flex;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#c p {
+    width: 85%;
+    text-align: left;
+    font-size: 22px;
+}
+
+#c svg {
+    width: 15%;
+}
+
+#d {
+    display: flex;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#d p {
+    width: 85%;
+    text-align: left;
+    font-size: 22px;
+}
+
+#d svg {
+    width: 15%;
+}
+
+.footer {
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    background-color: #004225;
+    padding: 35px;
+    align-items: center;
+}
+
+.footer img {
+    width: 90px;
+}
+
+.footer p {
+    width: 80%;
+}

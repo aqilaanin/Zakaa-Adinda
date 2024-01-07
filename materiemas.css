@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    align-items: center;
+}
+
+/* style navbar baru */
+/* style menu tengah */
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    color: #004225;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li ul.dropdown {
+    width: 200%;
+    background-color: #004225ba;
+    color: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 18px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul li a:hover {
+    background-color: #004225ba;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* style navbar keseluruhan */
+.navbar-materi {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: fixed;
+    margin-top: -101px;
+}
+
+/* style logo */
+.kiri a img {
+    width: 110px;
+}
+
+/* style profil */
+.kanan a svg {
+    width: 45px;
+}
+
+.kiri {
+    width: 15%;
+    text-align: center;
+}
+
+.tengah {
+    width: 70%;
+    flex: 1;
+    text-align: center;
+}
+
+.kanan {
+    width: 15%;
+    text-align: center;
+}
+/* style navbar baru */
+
+.title {
+    position: relative;
+    z-index: 1;
+    margin-top: 102px;
+}
+
+.title h1 {
+    text-align: center;
+    color: #004225;
+    font-size: 45px;
+    padding: 40px;
+}
+
+.gambarjudul {
+    position: relative;
+}
+
+.gambarjudul img {
+    z-index: 1;
+    opacity: 0.5;
+    margin-top: -238px;
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+.emas1 {
+    margin-left: 100px;
+}
+
+.p-emas {
+    border-radius: 5px;
+    border: 1px solid black;
+    /* atur ketebalan dan warna garis sesuai kebutuhan Anda */
+    padding: 20px;
+    /* atur padding sesuai kebutuhan Anda */
+    width: 300px;
+    /* atur lebar sesuai kebutuhan Anda */
+    margin-top: 50px;
+}
+
+.p-emas p {
+    font-size: 20px
+}
+
+.p-emas b {
+    color: white;
+    background-color: #005832;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.p-perak {
+    border-radius: 5px;
+    border: 1px solid black;
+    /* atur ketebalan dan warna garis sesuai kebutuhan Anda */
+    padding: 20px;
+    /* atur padding sesuai kebutuhan Anda */
+    width: 300px;
+    /* atur lebar sesuai kebutuhan Anda */
+    margin-top: 25px;
+}
+
+.p-perak p {
+    font-size: 20px;
+}
+
+.p-perak b {
+    color: white;
+    background-color: #005832;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.k-empe {
+    background-color: #004225;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 63px;
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+}
+
+.k-empe h3 {
+    flex: 1;
+    text-align: center;
+    margin-left: -30px;
+    font-size: 21px;
+    margin-top: 19px;
+}
+
+.k-empe svg {
+    width: 70px;
+    padding: 10px;
+}
+
+.k-empe a {
+    text-decoration: none;
+    color: white;
+}
+
+.k-empe:hover {
+    background-color: #004225ba;
+    color: white;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.materi-empe {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.emas2 {
+    flex: 1;
+    padding: 0 20px;
+    border-left: 2px solid black;
+    margin-left: 30px;
+    padding: 30px;
+}
+
+.emas2 p {
+    font-size: 20px;
+    width: 90%;
+    height: auto;
+}
+
+.emas3 {
+    border-radius: 15px;
+    margin: 40px;
+    background-color: #88a98d;
+    padding: 35px;
+}
+
+.jdl-kmnt {
+    width: 205px;
+    display: flex;
+    padding: 15px;
+}
+
+.jdl-kmnt h2 {
+    text-align: center;
+    font-size: 25px;
+    width: 70%;
+}
+
+.jdl-kmnt svg {
+    flex: 1;
+}
+
+.komentar {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    /* Sesuaikan dengan lebar yang Anda inginkan */
+}
+
+.input-komentar {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.input-komentar input {
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.icon-komentar {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    /* Sesuaikan dengan lebar ikon */
+    height: 30px;
+    /* Sesuaikan dengan tinggi ikon */
+}
+
+.icon-komentar svg {
+    width: 100%;
+    height: 100%;
+    fill: grey;
+    /* Sesuaikan warna ikon */
+}
+
+
+.footer {
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    background-color: #004225;
+    padding: 35px;
+    align-items: center;
+}
+
+.footer img {
+    width: 90px;
+}
+
+.footer p {
+    width: 80%;
+}
+
+input tbody{
+    box-sizing: border-box;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+}
